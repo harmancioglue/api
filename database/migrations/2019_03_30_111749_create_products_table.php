@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->integer('stock');
             $table->integer('discount');
 //            $table->engine = "InnoDB";
+            $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });
     }
